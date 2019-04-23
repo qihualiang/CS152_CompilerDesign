@@ -70,7 +70,6 @@
 
  /* Catch errors */
   .		{printf("Error at line %d, column %d: unrecognized symbol \"%s\"\n", currLine, currPos, yytext); exit(0);}
-  [0-9]+([A-Z]|[a-z])	{printf("Error at line %d, column %d: identifier \"%s\" must begin with a letter \n", currLine, currPos, yytext); exit(0);}
   [0-9"_"]["_"a-zA-Z0-9]*	{printf("Error at line %d, column %d: identifier \"%s\" must begin with a letter\n", currLine, currPos, yytext);exit(-1);}
   [a-zA-Z]["_"a-zA-Z0-9]*"_"+	{printf("Error at line %d, column %d: identifier \"%s\" cannot end with an underscore\n", currLine, currPos, yytext);exit(-1);}
 

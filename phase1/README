@@ -2,7 +2,7 @@ Phase 1: Lexical Analyzer Generation Using flex
 
 Use the flex tool to generate a lexical analyzer for a high-level source code language called "MINI-L". The lexical analyzer takes as input a MINI-L program, parses it, and outputs the sequence of lexical tokens associated with the program.
 
-HOW TO RUN
-flex miniL.lex
-gcc -o lexer lex.yy.c -lfl
-./lexer fibonacci.min 
+
+MANUAL:
+  make
+  ./lexer fibonacci.min 
