@@ -1,0 +1,9 @@
+Phase 2: Parser Generation Using bison
+
+In this phase of the class project, a parser is created using the bison tool that will check to see whether the identified sequence of tokens adheres to the specified grammar of MINI-L. The output of this parser will be the list of productions used during the parsing process. If any syntax errors are encountered during parsing, this parser will emit appropriate error messages. 
+
+
+
+MANUAL:
+  make
+  parser fibonacci.min

@@ -1,0 +1,8 @@
+Phase 3: Code Generation
+
+In this phase of the class project, it uses a syntactically-correct MINI-L program (a program that can be parsed without any syntax errors), verifies that it has no semantic errors, and then generates its corresponding intermediate code. The generated code can then be executed (using a provided tool mil_run) to run the compiled MINI-L program.
+
+MANUAL:
+  make
+  parser fibonacci.min > fibonacci.mil
+  mil_run fibonacci.mil < input.txt
